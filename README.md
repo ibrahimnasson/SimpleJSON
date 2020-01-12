@@ -11,22 +11,31 @@ Original License: Do what the fuck you want public license
 This version includes new features, performancefixes, documentation and bugfixes added by <giri@nwrk.biz>.
 
 ## License
+
 "THE BEER-WARE LICENSE" (Revision 42):
 <giri@nwrk.biz> extended and modified this file. As long as you retain this notice you  
 can do whatever you want with this stuff. If we meet some day, and you think  
 this stuff is worth it, you can buy me a beer in return Daniel Giritzer
 
+## Download
+
+[Click here to download](https://raw.githubusercontent.com/nwrkbiz/SimpleJSON/master/JSON.h)
+
 ## About
+
 SimpleJSON is a lightweight JSON library for exporting data in JSON format from C++. By taking advantage of templates and operator overloading on the backend, you're able to create and work with JSON objects right away, just as you would expect from a language such as JavaScript. SimpleJSON is a single C++ Header file, "json.hpp". Feel free to download this file on its own, and include it in your project. No other requirements!
 
 #### Platforms
+
 SimpleJSON should work on any platform; it's only requirement is a C++17 compatible compiler. The tests are tailored for linux, but could be ported to any platform with python support and a C++17 compiler.
 
 ## API Documentation
-You can find the API [over here](API.md)
+
+You can find the API [over here](https://nwrkbiz.github.io/SimpleJSON/html/classjson_1_1JSON.html)
 
 ## Example
-More examples can be found in the 'examples' directory or in the [API documentetaion](API.md).
+
+More examples can be found in the 'examples' directory or in the [API documentetaion](https://nwrkbiz.github.io/SimpleJSON/html/classjson_1_1JSON.html).
 
 ```cpp
 #include "JSON.h"
