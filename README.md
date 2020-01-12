@@ -1,31 +1,35 @@
-# SimpleJSON
-Simple C++ JSON library
+SimpleJSON
+==========
+Simple header only C++ JSON library
+
+Based on: https://github.com/nbsdx/SimpleJSON/ 
+
+Original Author: nbsdx (Neil)
+
+Original License: Do what the fuck you want public license
+
+This version includes new features, performancefixes, documentation and bugfixes added by <giri@nwrk.biz>.
 
 ## License
-Do what the fuck you want public license
+"THE BEER-WARE LICENSE" (Revision 42):
+<giri@nwrk.biz> extended and modified this file. As long as you retain this notice you  
+can do whatever you want with this stuff. If we meet some day, and you think  
+this stuff is worth it, you can buy me a beer in return Daniel Giritzer
 
 ## About
 SimpleJSON is a lightweight JSON library for exporting data in JSON format from C++. By taking advantage of templates and operator overloading on the backend, you're able to create and work with JSON objects right away, just as you would expect from a language such as JavaScript. SimpleJSON is a single C++ Header file, "json.hpp". Feel free to download this file on its own, and include it in your project. No other requirements!
 
 #### Platforms
-SimpleJSON should work on any platform; it's only requirement is a C++11 compatible compiler, as it make heavy use of the C++11 move semantics, and variadic templates. The tests are tailored for linux, but could be ported to any platform with python support and a C++11 compiler.
+SimpleJSON should work on any platform; it's only requirement is a C++17 compatible compiler. The tests are tailored for linux, but could be ported to any platform with python support and a C++17 compiler.
 
-## API
-You can find the API [over here](API.md). For now it's just a Markdown file with C++ syntax highlighting, but it's better than nothing!
-
-## Upcoming Features
-SimpleJSON is still missing some features, which I hope to get done soon!
-* Write more test cases to cover all major components( mostly parsing )
-
-One of the biggests goals for SimpleJSON is for it to be lightweight, and small. Having complicated logic isn't bad, but it bloats the codebase in most cases. I'd like to keep things small rather than put in big features that take a ton of space.
-
-If you run into any bugs, or see that I'm missing a featuer, please submit an issue through GitHub and I'll respond as soon as I can!
+## API Documentation
+You can find the API [over here](API.md)
 
 ## Example
-More examples can be found in the 'examples' directory. Check out [the API](API.md) for a full list of functions.
+More examples can be found in the 'examples' directory or in the [API documentetaion](API.md).
 
 ```cpp
-#include "json.hpp"
+#include "JSON.h"
 
 int main() {
   json::JSON obj;
@@ -69,7 +73,7 @@ Output:
 
 This example can also be written another way:
 ```cpp
-#include "json.hpp"
+#include "JSON.h"
 #include <iostream>
 
 using json::JSON;
@@ -92,4 +96,4 @@ int main() {
 
     std::cout << obj << std::endl;
 ```
-Sadly, we don't have access to the : character in C++, so we can't use that to seperate key-value pairs, but by using commas, we can achieve a very similar effect. The other point you might notice, is that we have to explictly create arrays. This is a limitation of C++'s operator overloading rules, so we can't use the [] operator to define the array :( I'm looking into ways to make this smoother.
+Sadly, we don't have access to the : character in C++, so we can't use that to seperate key-value pairs, but by using commas, we can achieve a very similar effect. The other point you might notice, is that we have to explictly create arrays. This is a limitation of C++'s operator overloading rules, so we can't use the [] operator to define the array.
