@@ -35,7 +35,7 @@ You can find the API [over here](https://nwrkbiz.github.io/SimpleJSON/html/class
 
 ## Example
 
-More examples can be found in the 'examples' directory or in the [API documentetaion](https://nwrkbiz.github.io/SimpleJSON/html/classjson_1_1JSON.html).
+More examples can be found in the 'examples' directory or in the [API documentetaion](https://nwrkbiz.github.io/SimpleJSON/html/classjson_1_1JSON.html#details).
 
 ```cpp
 #include "JSON.h"
