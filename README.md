@@ -23,7 +23,7 @@ this stuff is worth it, you can buy me a beer in return Daniel Giritzer
 
 ## About
 
-SimpleJSON is a lightweight JSON library for exporting data in JSON format from C++. By taking advantage of templates and operator overloading on the backend, you're able to create and work with JSON objects right away, just as you would expect from a language such as JavaScript. SimpleJSON is a single C++ Header file, "json.hpp". Feel free to download this file on its own, and include it in your project. No other requirements!
+SimpleJSON is a lightweight JSON library for exporting data in JSON format from C++. By taking advantage of templates and operator overloading on the backend, you're able to create and work with JSON objects right away, just as you would expect from a language such as JavaScript. SimpleJSON is a single C++ Header file, "[JSON.h](https://raw.githubusercontent.com/nwrkbiz/SimpleJSON/master/JSON.h)". Feel free to download this file on its own, and include it in your project. No other requirements!
 
 #### Platforms
 
