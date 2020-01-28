@@ -1,7 +1,7 @@
 NOTICE
 ======
 
-Further development will happen within the [C++ support library](https://github.com/nwrkbiz/Cpp-SupportLibrary).
+Further development will happen within the C++ support library: https://github.com/nwrkbiz/Cpp-SupportLibrary.
 
 SimpleJSON
 ==========
@@ -36,7 +36,7 @@ SimpleJSON should work on any platform; it's only requirement is a C++17 compati
 
 ## API Documentation
 
-You can find the API [over here](https://nwrkbiz.github.io/SimpleJSON/html/classjson_1_1JSON.html)
+You can find the API documentation over here: https://nwrkbiz.github.io/SimpleJSON/html/classjson_1_1JSON.html
 
 ## Example
 
