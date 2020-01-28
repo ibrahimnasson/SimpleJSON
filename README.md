@@ -1,3 +1,8 @@
+NOTICE
+======
+
+Further development will happen within the [C++ support library](https://github.com/nwrkbiz/Cpp-SupportLibrary).
+
 SimpleJSON
 ==========
 Simple header only C++ JSON library
