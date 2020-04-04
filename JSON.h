@@ -31,8 +31,17 @@
 #include <initializer_list>
 #include <ostream>
 #include <iostream>
-#include <charconv>
 #include <memory>
+
+//#if (__cplusplus >= 201703L)
+#if __has_include("charconv") || __has_include(<charconv.h>)
+#include <charconv>
+#else
+#include "rigtorp/CharConv.h"
+#define  rigtorp_charconv
+#endif
+
+
 
 namespace json {
 
@@ -856,8 +865,13 @@ namespace json {
                 ok = (Type == Class::String);
                 if (ok)
                 {
-                    long long parsed;
+                    long long parsed;                    
+
+#ifndef rigtorp_charconv
                     std::from_chars_result result = std::from_chars(Internal.String->data(), Internal.String->data() + Internal.String->size(), parsed);
+#else
+                    rigtorp::from_chars_result result = rigtorp::from_chars(Internal.String->data(), Internal.String->data() + Internal.String->size(), parsed);
+#endif
                     if(!(bool)result.ec)
                         return parsed;
                     ok = false;
@@ -898,7 +912,11 @@ namespace json {
                     if(Internal.String->find("false")!=std::string::npos)
                         return false;
                     int parsed;
-                    std::from_chars_result result = std::from_chars(Internal.String->data(), Internal.String->data() + Internal.String->size(), parsed);
+#ifndef rigtorp_charconv
+                     std::from_chars_result result = std::from_chars(Internal.String->data(), Internal.String->data() + Internal.String->size(), parsed);
+#else
+                     rigtorp::from_chars_result result = rigtorp::from_chars(Internal.String->data(), Internal.String->data() + Internal.String->size(), parsed);
+#endif
                     if(!(bool)result.ec)
                         return parsed;
                     ok = false;
